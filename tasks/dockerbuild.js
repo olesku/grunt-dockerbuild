@@ -16,7 +16,7 @@ var minTwoDigits = function (n) {
 var getTimestamp = function() {
   var d = new Date();
 
-  return [d.getFullYear(), minTwoDigits(d.getMonth()), 
+  return [d.getFullYear(), minTwoDigits(d.getMonth()+1),
   minTwoDigits(d.getDate()), minTwoDigits(d.getHours()), minTwoDigits(d.getMinutes()), minTwoDigits(d.getSeconds())].join('');
 };
 
